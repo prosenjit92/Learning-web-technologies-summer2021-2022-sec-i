@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login</title>
+</head>
+<script>
+    function validate() {
+        let username = document.getElementById("username").value;
+        let password = document.getElementById("password").value;
+
+        if (username != "" && password != "") {
+            return true;
+        } else if (username == "") {
+            alert("null username");
+            return false;
+
+        } else {
+            alert("null Password");
+            return false;
+        }
+
+    }
+</script>
+
+
+<body>
+    <style>
+        body {
+            background-image: url('../picture/img3.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+    </style>
+    <form method="post" enctype="" onsubmit="return validate()">
+        <fieldset>
+            <legend>Login:</legend>
+            <tr>
+                <td>username:</td>
+                <td><input type="text" name="username" id="username" value=""></td>
+            </tr>
+            <br>
+            <tr>
+                <td>password:</td>
+                <td><input type="password" name="password" id="password" value=""></td>
+            </tr>
+            <br>
+
+            <tr>
+                <td><input type="submit" name="" value="Login"></td>
+                <td><a href="Registration.html">SignIn</a></td>
+            </tr>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
